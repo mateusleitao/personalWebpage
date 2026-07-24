@@ -18,9 +18,10 @@
 }
 
 .navbar ul {
+    
     padding-inline-start: 0;
     list-style-type: none;
-    background-color: #09090B99;
+    background-color: var(--wine-plum);
     padding: 16px;
     border-radius: 100vw;
     backdrop-filter: blur(10px);
@@ -33,5 +34,5 @@
 .navbar a {
     padding: 33px;
     text-decoration: none;
-    color: white;
+    color: var(--linen);
 }
