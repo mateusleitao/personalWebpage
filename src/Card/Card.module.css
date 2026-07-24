@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(48, 48, 48);
+    padding-inline: 50px;
+    width: 70%;
+    height: 30vh;
+    border-radius: 12pt;
+    
+}
