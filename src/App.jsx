@@ -11,12 +11,12 @@ function App() {
                 Github
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="index.html">Home</a>
             </li>
             <li>
               <a href="lyrics.html">Lyrics</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <main>
