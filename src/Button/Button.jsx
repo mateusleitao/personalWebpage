@@ -16,11 +16,19 @@ function Button() {
 
   return (
     <>
-      {Object.entries(myPlatforms).map(([key, value]) => (
-        <div key={key} className={styles.buttonContainer}>
-          <h3>{value.platformName}</h3>
-        </div>
-      ))}
+      <div className={styles.buttonContainer}>
+        {Object.entries(myPlatforms).map(([key, platform]) => (
+          <a
+            key={key}
+            href={platform.url}
+            target="_blank"
+            className={styles.btnPlatform}
+          >
+            <span>{platform.icon}</span>
+            <span>{platform.platformName}</span>
+          </a>
+        ))}
+      </div>
     </>
   );
 }
