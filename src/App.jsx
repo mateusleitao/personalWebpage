@@ -21,7 +21,7 @@ function App() {
         </nav>
         <main>
           <div id="card">
-            <h1>Hi, I am Mateus</h1>
+            <h1>Hi, I am Lange</h1>
             <p>
               First of all, I want to explain what is this page. This page is a
               project of me that look into develop something which is entirely
