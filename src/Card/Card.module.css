@@ -23,3 +23,7 @@
   flex-direction: column;
 
 }
+
+.textBox h1{
+  font-family: 'San Francisco Bold';
+}

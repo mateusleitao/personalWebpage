@@ -10,8 +10,7 @@ function Card() {
             <h1>Hi, I am Lange</h1>
             <p>
               Every update on this page is being recorded on its respective
-              repository, based in: <a href="http://github.com/mateusleitao" target="_blank">my Github</a> this link at commits section. None of the
-              code here was made AI assisted.
+              repository.
             </p>
             <Button></Button>
           </div>
