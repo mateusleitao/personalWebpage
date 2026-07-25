@@ -24,6 +24,7 @@ function Button() {
             target="_blank"
             className={styles.btnPlatform}
             alt={platform.platformName}
+      
           >
             <span>
               <img src={platform.icon} alt={platform.platformName} />
