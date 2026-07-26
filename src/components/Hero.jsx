@@ -6,7 +6,7 @@ function Hero() {
   const platforms = [
     {
       name: "Github",
-      url: "https://www.github.com/mateusleit",
+      url: "https://www.github.com/mateusleitao",
       iconPath: githubIcon,
     },
     {
