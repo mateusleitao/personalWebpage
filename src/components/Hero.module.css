@@ -26,6 +26,10 @@ a {
 
 }
 
+.heroLinkList{
+    margin-inline: 30px;
+}
+
 .heroLinkList li {
     display: flex;
     flex-direction: column-reverse;
