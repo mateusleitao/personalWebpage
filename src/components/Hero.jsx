@@ -5,12 +5,12 @@ function Hero() {
     {
       name: "Github",
       url: "https://www.github.com/mateusleit",
-      iconPath: "src/assets/gh.svg",
+      iconPath: "public/linkedIn.svg",
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/mateusleitaoelpidio",
-      iconPath: "src/assets/linkedIn.svg",
+      iconPath: "public/linkedIn.svg",
     },
   ];
 

@@ -4,7 +4,7 @@ function Profile() {
   return (
     <>
       <div className={styles.pictureContainer}>
-        <img src="src/assets/photoOfMine.png" alt="#" className={styles.picture} />
+        <img src="public/photoOfMine.png" alt="#" className={styles.picture} />
    
       </div>
     </>
