@@ -53,6 +53,7 @@ a {
 
 .aboutMe{
     font-size: 24px;
+    margin-inline: 24px;
 }
 
 .aboutMe span{
