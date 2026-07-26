@@ -1,15 +1,14 @@
-import "./App.css";
-import Header from "./Header/Header";
-import Card from "./Card/Card";
+import Hero from "./components/Hero.jsx"
+import Profile from "./components/Profile.jsx"
+import "./App.css"
 
 function App() {
   return (
     <>
-      <body>
-        {/* <Header></Header> */}
-        <Card></Card>
-        <footer></footer>
-      </body>
+      <main className="Container">
+        <Hero></Hero>
+        <Profile></Profile>
+      </main>
     </>
   );
 }
