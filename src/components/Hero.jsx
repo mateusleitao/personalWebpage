@@ -1,16 +1,18 @@
 import styles from "./Hero.module.css";
+import githubIcon from "../assets/gh.svg";
+import linkedInIcon from "../assets/linkedIn.svg";
 
 function Hero() {
   const platforms = [
     {
       name: "Github",
       url: "https://www.github.com/mateusleit",
-      iconPath: "public/linkedIn.svg",
+      iconPath: githubIcon,
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/mateusleitaoelpidio",
-      iconPath: "public/linkedIn.svg",
+      iconPath: linkedInIcon,
     },
   ];
 

@@ -1,10 +1,12 @@
-import styles from "./Profile.module.css"
+import styles from "./Profile.module.css";
+import langePhoto from "../assets/photoOfMine.png";
+
 
 function Profile() {
   return (
     <>
       <div className={styles.pictureContainer}>
-        <img src="public/photoOfMine.png" alt="#" className={styles.picture} />
+        <img src={langePhoto} alt="#" className={styles.picture} />
    
       </div>
     </>
