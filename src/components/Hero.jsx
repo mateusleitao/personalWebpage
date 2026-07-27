@@ -1,6 +1,7 @@
 import styles from "./Hero.module.css";
 import githubIcon from "../assets/gh.svg";
 import linkedInIcon from "../assets/linkedIn.svg";
+import devtoIcon from "../assets/devto.svg"
 
 function Hero() {
   const platforms = [
@@ -14,6 +15,11 @@ function Hero() {
       url: "https://www.linkedin.com/in/mateusleitaoelpidio",
       iconPath: linkedInIcon,
     },
+    {
+      name:"Dev.to",
+      url: "https://dev.to/mateuslange",
+      iconPath: devtoIcon,
+    }
   ];
 
   return (

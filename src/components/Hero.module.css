@@ -33,12 +33,17 @@ a {
 .heroLinkList li {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
 }
 
 .platformBtn{
 
     margin: 20px;
     font-size: 3em;
+}
+
+.platformBtn img{
+    width: 50px;
 }
 
 .greetings{
@@ -59,3 +64,4 @@ a {
 .aboutMe span{
     font-family: "San Francisco Bold";
 }
+
