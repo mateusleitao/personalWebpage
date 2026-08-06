@@ -72,8 +72,27 @@
 
 @media (max-width: 47.9375rem) {
   .heroContainer {
-    min-height: 62svh;
-    box-shadow: 0 0.5rem 1.5rem rgb(4 4 4 / 14%);
+    min-height: 0;
+    padding: 1.5rem 1.25rem 2rem;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .greetings {
+    font-size: clamp(2.25rem, 10.5vw, 2.75rem);
+  }
+
+  .aboutMe {
+    margin-top: 1rem;
+  }
+
+  .heroLinkList {
+    justify-content: center;
+    margin-top: 1.5rem;
   }
 }
 

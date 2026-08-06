@@ -4,10 +4,13 @@
 
 At widths of 768 pixels and above, the page uses two equal columns: introduction
 on the left and portrait on the right. Below 768 pixels, content is stacked with
-the introduction first and the portrait second.
+the portrait presented visually first as a circular avatar, followed by the
+introduction and social links in one centered card. The document order remains
+introduction-first so the primary content leads for assistive technology.
 
-On mobile, the portrait keeps its native 4:3 composition so the complete image
-is visible without an artificially tall crop.
+On mobile, the portrait uses a tight head-and-shoulders crop inside a 120 pixel
+circular frame. The card is content-height rather than viewport-height and uses
+fluid outer spacing so it remains compact at both 320 and 390 pixels.
 
 The page must not scroll horizontally at 320, 390, 768, or 1280 pixels. Mobile
 content uses fluid type and spacing rather than a separate condensed interface.

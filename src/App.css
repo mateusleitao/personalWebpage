@@ -7,6 +7,15 @@
 
 @media (max-width: 47.9375rem) {
   .pageShell {
-    grid-template-columns: minmax(0, 1fr);
+    display: flex;
+    width: 100%;
+    max-width: 28rem;
+    min-height: 0;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    background: var(--secondary-color);
+    box-shadow: 0 0.75rem 2rem rgb(4 4 4 / 14%);
   }
 }

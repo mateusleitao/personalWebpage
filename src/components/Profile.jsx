@@ -12,12 +12,12 @@ function Profile() {
         <source
           type="image/avif"
           srcSet={`${langePhotoAvifSmall} 720w, ${langePhotoAvif} 1448w`}
-          sizes="(max-width: 47.9375rem) 100vw, 50vw"
+          sizes="(max-width: 47.9375rem) 120px, 50vw"
         />
         <source
           type="image/webp"
           srcSet={`${langePhotoWebpSmall} 720w, ${langePhotoWebp} 1448w`}
-          sizes="(max-width: 47.9375rem) 100vw, 50vw"
+          sizes="(max-width: 47.9375rem) 120px, 50vw"
         />
         <img
           src={langePhoto}

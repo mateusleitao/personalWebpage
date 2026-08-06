@@ -18,8 +18,9 @@ Vitest verifies the one-heading contract, the three uniquely named social
 links, and portrait semantics. Playwright verifies:
 
 - No horizontal overflow at 320, 390, 768, and 1280 pixels
-- Content-first portrait ordering on mobile
-- A useful mobile portrait width
+- A centered, avatar-first visual card composition on mobile
+- A circular 120 pixel mobile portrait crop
+- The existing equal-column composition on desktop
 - No browser console errors at each required width
 - No automatically detectable axe violations at 390 and 1280 pixels
 
@@ -30,8 +31,8 @@ that assert CSS class names or component internals.
 
 Automation does not prove visual quality or full accessibility. For visual
 changes, inspect 390 and 1280 pixel renderings, tab through all links, confirm
-the focus indicator is visible, and check that the portrait crop remains
-intentional.
+the focus indicator is visible, and check that both the mobile avatar crop and
+desktop portrait crop remain intentional.
 
 ## Dependency and performance checks
 
