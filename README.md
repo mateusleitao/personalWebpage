@@ -1,16 +1,53 @@
-# React + Vite
+# Lange portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, accessible single-page portfolio built with React 19 and Vite 8.
+It introduces Lange and links to his GitHub, LinkedIn, and Dev.to profiles.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js 24 (`.nvmrc`)
+- npm 11
 
-## React Compiler
+## Local development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```sh
+nvm use
+npm ci
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open the local URL printed by Vite.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Quality commands
+
+```sh
+npm run lint          # Static JavaScript and React checks
+npm run test          # Semantic component tests
+npm run test:e2e      # Responsive and accessibility browser tests
+npm run build         # Production bundle
+npm run verify        # Complete required verification suite
+```
+
+Install the browser used by the end-to-end suite once with:
+
+```sh
+npx playwright install chromium
+```
+
+## Repository map
+
+- `src/components/` — page sections and their CSS Modules
+- `src/assets/` — social icons and responsive portrait assets
+- `src/App.test.jsx` — semantic component contract
+- `tests/e2e/` — responsive, console, and accessibility checks
+- `docs/` — product, design, quality, and delivery decisions
+- `AGENTS.md` — concise working agreement for coding agents
+- `netlify.toml` — Netlify build, publish, and SPA redirect configuration
+
+## Deployment
+
+Netlify runs `npm run build` and publishes `dist/`. The root
+`netlify.toml` is the version-controlled source of deployment configuration.
+
+Before merging any change, run `npm run verify` and inspect the result in both
+a mobile and desktop browser viewport.

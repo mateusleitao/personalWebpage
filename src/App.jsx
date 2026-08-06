@@ -4,13 +4,11 @@ import "./App.css"
 
 function App() {
   return (
-    <>
-      <main className="Container">
-        <Hero></Hero>
-        <Profile></Profile>
-      </main>
-    </>
-  );
+    <main className="pageShell">
+      <Hero />
+      <Profile />
+    </main>
+  )
 }
 
-export default App;
+export default App

@@ -1,67 +1,84 @@
-.heroContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secundary-color);
-    box-shadow: rgba(4, 4, 4, 0.2) 0px 8px 24px;
+.heroContainer {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  padding: clamp(3rem, 8vw, 7rem) clamp(1.25rem, 5vw, 5rem);
+  background-color: var(--secondary-color);
+  box-shadow: 0.5rem 0 1.5rem rgb(4 4 4 / 14%);
 }
 
-a {
-    text-decoration: none;
+.hero {
+  width: min(100%, 35rem);
 }
 
-.hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--secundary-color);
+.greetings {
+  margin: 0;
+  font-size: clamp(2.75rem, 5.6vw, 4.5rem);
+  font-weight: 750;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
 }
 
-.hero ul{
-    display: flex;
-    list-style: none;
-    padding-inline-start: 0px;
-
+.greetingsPrefix {
+  font-weight: 400;
 }
 
-.heroLinkList{
-    margin-inline: 30px;
+.aboutMe {
+  max-width: 33rem;
+  margin: clamp(1.5rem, 4vw, 2.5rem) 0 0;
+  font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+  line-height: 1.45;
 }
 
-.heroLinkList li {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+.heroLinkList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+  margin: clamp(1.75rem, 5vw, 3rem) 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.platformBtn{
-
-    margin: 20px;
-    font-size: 3em;
+.platformBtn {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  place-items: center;
+  border-radius: 0.75rem;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
 }
 
-.platformBtn img{
-    width: 50px;
+.platformBtn:hover {
+  background: rgb(0 0 0 / 7%);
+  transform: translateY(-0.125rem);
 }
 
-.greetings{
-    font-size: 58px;
-    font-family: "San Francisco Bold";
+.platformBtn:focus-visible {
+  outline: 0.1875rem solid var(--focus-color);
+  outline-offset: 0.1875rem;
 }
 
-.greetingsPrefix{
-    font-family: "San Francisco";
+.platformBtn img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
 }
 
-
-.aboutMe{
-    font-size: 24px;
-    margin-inline: 24px;
+@media (max-width: 47.9375rem) {
+  .heroContainer {
+    min-height: 62svh;
+    box-shadow: 0 0.5rem 1.5rem rgb(4 4 4 / 14%);
+  }
 }
 
-.aboutMe span{
-    font-family: "San Francisco Bold";
+@media (prefers-reduced-motion: reduce) {
+  .platformBtn {
+    transition: none;
+  }
 }
-

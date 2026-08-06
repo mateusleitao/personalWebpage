@@ -1,26 +1,12 @@
-
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
-
-@font-face {
-  font-family: "San Francisco Bold";
-  font-weight: bold;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
-}
-
-
-body {
-	
-  font-family: San Francisco;
-  background-color: var(--primary-color);
-}
-
-main {
+.pageShell {
   display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-  height: 100vh;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+@media (max-width: 47.9375rem) {
+  .pageShell {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
